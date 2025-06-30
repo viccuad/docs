@@ -25,9 +25,7 @@ Since version X.Y.Z, `rancher-backup` has support for Kubewarden. This includes:
 - The `policy-reporter` subchart of the `kubewarden-controller` chart, for their
   default values. This doesn't include the Grafana integration nor other plugins.
 
-The backup process doesn't include Secrets created to [configure PolicyServers
-for private registries](./policy-servers/private-registry#creating-the-secret)
-unless those are correctly labeled.
+unless they are correctly labeled.
 
 ## Installing Rancher Backup Operator
 
@@ -70,7 +68,7 @@ EOF
 backup.resources.cattle.io/default-location-backup created
 ```
 
-The `rancher-backup` logs or the backup will show the creation of the backup file:
+The `rancher-backup` logs or the backup show the creation of the backup file:
 
 ```
 $ kubectl logs -n cattle-resources-system -l app.kubernetes.io/name=rancher-backup -f
