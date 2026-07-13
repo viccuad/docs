@@ -4,8 +4,8 @@ name: "Update CLI Reference Docs"
 on:
   workflow_dispatch:
   schedule:
-    # Run this job every Monday and Wednesday at 00:00
-    - cron: "0 0 * * 1,3"
+    # Run this job every Wednesday at 00:00
+    - cron: "0 0 * * 3"
 
 permissions:
   contents: write
